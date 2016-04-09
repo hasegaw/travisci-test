@@ -5,3 +5,7 @@ urllib3
 u-msgpack-python
 Pillow
 tornado
+numpy
+Pillow
+py
+pytest
