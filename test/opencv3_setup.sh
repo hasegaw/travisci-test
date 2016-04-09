@@ -14,7 +14,7 @@ cd opencv/build
 git checkout 3.1.0
 cmake -D CMAKE_INSTALL_PREFIX=$BASEDIR/local -D CMAKE_BUILD_TYPE=RELEASE \
     -D BUILD_opencv_python3=ON -D BUILD_opencv_python2=OFF \
-    -D WITH_CUDA=ON -D BUILD_EXAMPLES=OFF .. || exit 1
+    -D WITH_CUDA=ON -D BUILD_EXAMPLES=OFF -D WITH_VTK=OFF .. || exit 1
 #    -D OPENCV_EXTRA_MODULES_PATH=${BASEDIR}/opencv_contrib/modules \
 
 make -j 4 || exit 1
