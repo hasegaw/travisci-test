@@ -11,6 +11,7 @@ git clone --depth 1 https://github.com/Itseez/opencv_contrib.git
 mkdir -p opencv/build
 cd opencv/build
 
+git checkout 3.1.0
 cmake -D CMAKE_INSTALL_PREFIX=$BASEDIR/local -D CMAKE_BUILD_TYPE=RELEASE \
     -D OPENCV_EXTRA_MODULES_PATH=${BASEDIR}/opencv_contrib/modules \
     -D BUILD_opencv_python3=ON -D BUILD_opencv_python2=OFF \
